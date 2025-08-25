@@ -1,11 +1,4 @@
--- Set <space> as the leader key
 -- See `:help mapleader`
---  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
--- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = true
--- require the options and keymaps, and autocmds
 require 'MrGrinch.config.keymaps'
 require 'MrGrinch.config.options'
 
@@ -25,7 +18,7 @@ vim.o.relativenumber = true
 vim.o.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
-vim.o.showmode = false
+vim.o.showmode = true
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.

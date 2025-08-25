@@ -16,7 +16,7 @@
 --    vim.opt_local.expandtab = false
 --  end,
 --})
-
+vim.opt.guicursor = ''
 vim.opt.tabstop = 2 -- Number of spaces tabs count for
 vim.opt.shiftwidth = 2 -- Number of spaces used for indentation
 vim.opt.softtabstop = 2 -- Number of spaces a <Tab> counts as
@@ -25,3 +25,5 @@ vim.opt.autoindent = true -- Copy indent from current line when starting new one
 vim.opt.textwidth = 100 -- no more than 100 characters per line
 vim.opt.scrolloff = 8 -- at least 8 lines above and below
 vim.opt.fillchars = { eob = ' ' }
+vim.opt.swapfile = false
+vim.opt.backup = false
